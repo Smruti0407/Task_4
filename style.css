@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color: #333;
+  }
+  .profile-section {
+    padding: 60px 20px;
+    background-color: #f7faff;
+    color: #333;
+    text-align: center;
+  }
+  
+  .profile-section h2 {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 30px;
+  }
+  
+  .profile-section p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .education-section {
+    padding: 60px 20px;
+    background-color: #fdfdfd;
+    color: #333;
+    text-align: center;
+  }
+  
+  .education-section h2 {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 40px;
+  }
+  
+  .education-entry {
+    background: #ffffff;
+    border-left: 5px solid #2a5298;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+  
+  .education-entry h3 {
+    color: #2a5298;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  .education-entry p {
+    margin: 5px 0;
+  }
+  
+  .projects-section {
+    padding: 60px 20px;
+    background-color: #f0f0f5;
+    text-align: center;
+    color: #333;
+  }
+  
+  .projects-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #222;
+  }
+  
+  .project-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .project-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #1e3c72;
+  }
+  
+  .project-card ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .project-card p {
+    margin: 15px 0 10px;
+    font-weight: 600;
+  }
+  
+  .contact-section {
+    padding: 60px 20px;
+    background-color: #fff0f5;
+    text-align: center;
+    color: #333;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #8e44ad;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-link {
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+    background-color: #f9f9f9;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .contact-link:hover {
+    background-color: #8e44ad;
+    color: #fff;
+  }
+  
+  
+  header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav h1 {
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  }
+  
+  .hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    text-align: center;
+  }
+  
+  .hero img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-top: 1rem;
+  }
+  .home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .text-container h2, .text-container h3 {
+    margin: 10px 0;
+    font-size: 2rem;
+  }
+  .photo-container {
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in;
+  }
+  
+  .photo-container.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+ 
+  
+  .photo-container img {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  }
+  
+  
+  section {
+    padding: 60px 20px;
+  }
+  
+  #about, #projects, #contact {
+    background: #f4f4f4;
+    margin-top: 20px;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  #typing-text::after {
+    content: "|";
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  #typing-text::after {
+    content: "";
+    animation: none;
+  }
+    
